@@ -10,12 +10,9 @@ const counter = ( e ) => {
   carac = textArea.textLength
   countCarac.textContent = carac;
   let text = textArea.value;
-  text = text.replace(/[ ]+/g," "); text = text.replace(/^ /,"");
-  text = text.replace("\n\n", "\n");
+  text = text.replace(/[ ]+/g," "); text = text.replace(/^ /,""); text = text.replace("\n\n", "\n");
   textArea.value = text;
-  console.log(text);
-  console.log(text.split(" ") == "");
-  console.log(text.split(/\n/g));
+	
   if ( text.split(" ") == "" || text.split(".") == "" || text.split(/\n/g) == "" ) {
       countWords.textContent = 0;
       countOra.textContent = 0;
@@ -26,36 +23,7 @@ const counter = ( e ) => {
       countPa.textContent = ((text.split(/\n/g)).length) - 1;
   }
 };
+
 const loadEvents = () => textArea.addEventListener('keyup', counter);
 
 loadEvents();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // console.log(countOra)
-  // console.log(text.split(" "));
-  // console.log(text.split(/\n/g));
-  // console.log("TEST", ((text.split(/\n/g)).length) - 1)
-  // console.log(text)
-	//Reemplazamos los espacios seguidos por uno solo
-	// text = text.replace(/[ ]+/g," ");
-	//Quitarmos los espacios del principio y del final
-	
-  //Troceamos el texto por los espacios
-  // console.log(texArea);
-
-// countWords();
