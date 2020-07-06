@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contador de palabras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+            <div class="col">
+                <br>
+                <h2><strong>Contador de palabras, oraciones, párrafos y caracteres</strong></h2>
+                <br>
+                    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Ingrese el texto:</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" id="input"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+               <p> </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <span id="text-count">Cantidad de Palabras:</span>
+                <!-- <textarea class="form-control" id="counter" aria-label="With textarea">0</textarea> -->
+                <div id="counter-words" class="count">0</div>
+            </div>
+            <div class="col-md-4">
+                <span id="text-count">Cantidad de Caracteres:</span>
+                <div id="counter-carac" class="count">0</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <span id="text-count">Cantidad de Oraciones:</span>
+                <div id="counter-ora" class="count">0</div>
+            </div>
+            <div class="col-md-4">
+                <span id="text-count">Cantidad de Párrafos:</span>
+                <div id="counter-pa" class="count">0</div>
+            </div>
+        </div>
+   </div>
+
+    <script src="assets/js/contador-de-palabras.js" type="text/JavaScript"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+#counter-carac{
+  text-align: center;
+  font-size: 100px;
+}
+#counter-words {
+  text-align: center;
+  font-size: 100px;
+}
+.count {
+  text-align: center;
+  font-size: 100px;
+}
+body {
+  background: #0073d1;
+  background: -webkit-linear-gradient(to right, #ffffff, #1baaec);
+  background: linear-gradient(to right, #ffffff, #1baaec); 
+}
+#text-count {
+  font-size: 25px !important;
+}
