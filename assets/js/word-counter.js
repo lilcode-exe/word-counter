@@ -10,7 +10,7 @@ const counter = ( e ) => {
   carac = textArea.textLength
   countCarac.textContent = carac;
   let text = textArea.value;
-  text = text.replace(/[ ]+/g," "); text = text.replace(/^ /,""); text = text.replace("\n\n", "\n");
+  text = text.replace(/[ ]+/g," "); text = text.replace(/^ /,""); text = text.replace("\n\n", "\n"); text = text.replace("..", ".");
   textArea.value = text;
 	
   if ( text.split(" ") == "" || text.split(".") == "" || text.split(/\n/g) == "" ) {
