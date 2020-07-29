@@ -10,20 +10,36 @@ const counter = ( e ) => {
   carac = textArea.textLength
   countCarac.textContent = carac;
   let text = textArea.value;
-  text = text.replace(/[ ]+/g," "); text = text.replace(/^ /,""); text = text.replace("\n\n", "\n"); text = text.replace("..", ".");
+  text = text.replace(/[ ]+/g," "); 
+  text = text.replace(/[.]+/g, "."); 
+  text = text.replace(/^[ .,\n]/,"");
+  text = text.replace(/[\n]+/g, "\n");
+  // text = text.replace(/^[.]/g,""); // reducido
+  // text = text.replace(/^[.]/g,"");// reducido
   textArea.value = text;
 	
   if ( text.split(" ") == "" || text.split(".") == "" || text.split(/\n/g) == "" ) {
       countWords.textContent = 0;
       countOra.textContent = 0;
       countPa.textContent = 0;
+      textArea.value = text;
+
   } else {
       countWords.textContent = (text.split(" ")).length;
       countOra.textContent = ((text.split(".")).length) - 1;
       countPa.textContent = ((text.split(/\n/g)).length) - 1;
+      textArea.value = text;
+
   }
 };
+const resolvedBugs = ( e ) => {
+  e.preventDefault();
+  carac = textArea.textLength;
+}
 
-const loadEvents = () => textArea.addEventListener('keyup', counter);
+const loadEvents = () => { 
+    textArea.addEventListener('keyup', counter); 
+    textArea.addEventListener('keyup', resolvedBugs);
+}
 
 loadEvents();
