@@ -32,14 +32,7 @@ const counter = ( e ) => {
 
   }
 };
-const resolvedBugs = ( e ) => {
-  e.preventDefault();
-  carac = textArea.textLength;
-}
 
-const loadEvents = () => { 
-    textArea.addEventListener('keyup', counter); 
-    textArea.addEventListener('keyup', resolvedBugs);
-}
+const loadEvents = () => textArea.addEventListener('keyup', counter); 
 
 loadEvents();
