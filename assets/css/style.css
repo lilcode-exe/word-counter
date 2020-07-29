@@ -1,12 +1,4 @@
-#counter-carac{
-  text-align: center;
-  font-size: 100px;
-}
-#counter-words {
-  text-align: center;
-  font-size: 100px;
-}
-.count {
+#counter-carac, #counter-words, .count {
   text-align: center;
   font-size: 100px;
 }
