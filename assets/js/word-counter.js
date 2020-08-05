@@ -25,7 +25,7 @@ const counter = ( e ) => {
       textArea.value = text;
 
   } else {
-      // countWords.textContent = (text.split(" ")).length;// corregir palabras de mas por el espacio
+      // countWords.textContent = (text.split(" ")).length;// corregir palabras de mas por el espacio.
       countWords.textContent = (text.split(/ ./g)).length;
       countOra.textContent = ((text.split(".")).length) - 1;
       countPa.textContent = ((text.split(/\n/g)).length) - 1;
